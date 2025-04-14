@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build with MSYS2",
+      "type": "shell",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
+      "args": [
+        "-std=c++17",
+        "-IC:/msys64/ucrt64/include",
+        "-IC:/msys64/ucrt64/include/opencv4",
+        "${workspaceFolder}/main.cpp",
+        "-LC:/msys64/ucrt64/lib",
+        "-lopencv_core",
+        "-lopencv_imgcodecs",
+        "-lopencv_highgui",
+        "-lopencv_imgproc",
+        "-o",
+        "${workspaceFolder}/main.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
