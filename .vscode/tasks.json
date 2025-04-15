@@ -7,14 +7,14 @@
       "command": "C:/msys64/ucrt64/bin/g++.exe",
       "args": [
         "-std=c++17",
-        "-IC:/msys64/ucrt64/include",
         "-IC:/msys64/ucrt64/include/opencv4",
-        "${workspaceFolder}/main.cpp",
         "-LC:/msys64/ucrt64/lib",
+        "${workspaceFolder}/main.cpp",
         "-lopencv_core",
         "-lopencv_imgcodecs",
         "-lopencv_highgui",
         "-lopencv_imgproc",
+        "-lopencv_videoio",
         "-o",
         "${workspaceFolder}/main.exe"
       ],
