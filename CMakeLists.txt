@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 4.0.1)
 
 project(camera)
 
-set(OpenCV_DIR C:/msys64/ucrt64/lib/cmake/opencv4)
+set(OpenCV_DIR E:/opencv/build)
 find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
